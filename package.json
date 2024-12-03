@@ -1,0 +1,15 @@
+{
+  "name": "inventory-app",
+  "version": "1.0.0",
+  "description": "tracking count of your products",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Test geht, lol\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "mynotell",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.1"
+  }
+}
