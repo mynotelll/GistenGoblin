@@ -1,0 +1,64 @@
+body {
+    background-color: #d9e2ec;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left {
+    height: 400px;
+    width: 30%;
+    overflow-y: scroll;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: white;
+    border: 3px solid grey;
+    box-shadow: 3px 3px black;
+}
+
+.right {
+    height: 400px;
+    width: 55%;
+    overflow-y: scroll;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: white;
+    border: 3px solid grey;
+    box-shadow: 3px 3px black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding-left: 10px;
+}
+
+table thead tr {
+    background-color: lightgray;
+    color: black;
+}
+
+
+table tbody tr:nth-child(odd) {
+    background-color: grey;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: white;
+}
