@@ -1,7 +1,8 @@
 body {
-    background-color: #d9e2ec;
+    background-color: rgb(232, 232, 232);
     color: rgb(0, 0, 0);
     font-family: monospace;
+    font-size: 16px;
 }
 
 .header-container {
@@ -11,6 +12,40 @@ body {
     height: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.header-container select {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+
+.header-container .heading {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-container input[type="search"] {
+    position: absolute;
+    right: 200px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 20px;
+    width: 250px;
+}
+
+.header-container button {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
 }
 
 .container {
@@ -19,44 +54,48 @@ body {
     gap: 20px;
 }
 
-.left {
-    height: 400px;
-    width: 30%;
-    overflow-y: scroll;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    background-color: white;
-    border: 3px solid grey;
-    box-shadow: 3px 3px black;
-}
 
-.right {
-    height: 400px;
-    width: 55%;
+.table-area {
+    height: 500px;
+    width: 100%;
     overflow-y: scroll;
-    margin-right: 20px;
+    margin: 0 10px;
     padding-left: 10px;
     padding-top: 10px;
     background-color: white;
     border: 3px solid grey;
-    box-shadow: 3px 3px black;
+    box-shadow: 1px 2px grey;
+    position: relative;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     padding-left: 10px;
+    border: 1px solid black;
+
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    padding: 10px;
 }
 
 table thead tr {
-    background-color: lightgray;
+    background-color: rgb(149, 149, 149);
     color: black;
 }
 
+.table-product thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
 
 table tbody tr:nth-child(odd) {
-    background-color: grey;
+    background-color: lightgray;
 }
 
 table tbody tr:nth-child(even) {
@@ -64,12 +103,14 @@ table tbody tr:nth-child(even) {
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    margin: 8px 0;
-    border: none;
+    background-color: #b4b4b4;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-top: 5px;
+    border: 3px solid grey;
     cursor: pointer;
-    width: 100%;
-
+    width: auto;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
 }
