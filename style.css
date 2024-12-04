@@ -15,35 +15,32 @@ body {
     position: relative;
 }
 
-.header-container select {
+.header-container select,
+.header-container input[type="search"],
+.header-container button {
     position: absolute;
-    left: 0;
+    margin-top: 5px;
+    padding: 5px;
     font-size: 18px;
     line-height: 20px;
-    padding: 5px;
-    margin-top: 5px;
+}
 
+.header-container select {
+    left: 0;
 }
 
 .header-container .heading {
     margin: 0 auto;
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .header-container input[type="search"] {
-    position: absolute;
     right: 200px;
-    margin-top: 5px;
-    padding: 5px;
-    font-size: 18px;
-    line-height: 20px;
     width: 250px;
 }
 
 .header-container button {
-    position: absolute;
     right: 0;
     margin-right: 10px;
 }
@@ -53,7 +50,6 @@ body {
     justify-content: space-between;
     gap: 20px;
 }
-
 
 .table-area {
     height: 500px;
@@ -73,7 +69,6 @@ table {
     border-collapse: collapse;
     padding-left: 10px;
     border: 1px solid black;
-
 }
 
 table th,
@@ -105,12 +100,8 @@ table tbody tr:nth-child(even) {
 button {
     background-color: #b4b4b4;
     color: rgb(0, 0, 0);
-    padding: 5px;
-    margin-top: 5px;
     border: 3px solid grey;
     cursor: pointer;
     width: auto;
-    font-size: 18px;
-    line-height: 20px;
     align-items: center;
 }
