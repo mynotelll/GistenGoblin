@@ -37,7 +37,8 @@ body {
 
 .header-container input[type="search"] {
     right: 200px;
-    width: 250px;
+    width: 300px;
+    border-radius: 10px;
 }
 
 .header-container button {
