@@ -25,8 +25,3 @@ app.on('activate', () => {
         createWindow();
     }
 });
-
-function manageProducts() {
-    const manageArea = document.querySelector('.manage-area')
-    manageArea.innerHTML = 'Hilfe'
-}
